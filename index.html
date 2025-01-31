@@ -3,11 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    
+    <!-- Viewport para diseño responsivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RivasDev-ServicesWeb</title>
+    
+    <!-- Título de la página (máximo 60 caracteres) -->
+    <title>RivasDev - Desarrollo Web Empresarial | Diseño Responsivo y Tecnología Moderna</title>
+    
+    <!-- Meta descripción (máximo 160 caracteres) -->
+    <meta
+      name="description"
+      content="RivasDev ofrece servicios de desarrollo web empresarial, diseño responsivo y soluciones tecnológicas modernas para potenciar tu negocio."
+    />
+    
+    <!-- Palabras clave -->
+    <meta
+      name="keywords"
+      content="desarrollo web empresarial, diseño responsivo, tecnología moderna, RivasDev, servicios web, desarrollo de sitios web"
+    />
+    
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+    
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://www.rivasdev.com" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="RivasDev - Desarrollo Web Empresarial | Diseño Responsivo y Tecnología Moderna" />
+    <meta
+      property="og:description"
+      content="RivasDev ofrece servicios de desarrollo web empresarial, diseño responsivo y soluciones tecnológicas modernas para potenciar tu negocio."
+    />
+    <meta property="og:image" content="https://rivasdev.com/assets/images/og-image.jpg" />
+    <meta property="og:url" content="https://www.rivasdev.com" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RivasDev - Desarrollo Web Empresarial | Diseño Responsivo y Tecnología Moderna" />
+    <meta
+      name="twitter:description"
+      content="RivasDev ofrece servicios de desarrollo web empresarial, diseño responsivo y soluciones tecnológicas modernas para potenciar tu negocio."
+    />
+    <meta name="twitter:image" content="https://www.rivasdev.com/assets/images/twitter-image.jpg" />
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RivasDev",
+        "url": "https://www.rivasdev.com",
+        "logo": "https://www.rivasdev.com/assets/images/logo.png",
+        "description": "RivasDev ofrece servicios de desarrollo web empresarial, diseño responsivo y soluciones tecnológicas modernas para potenciar tu negocio.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+14048394292",
+          "contactType": "customer service",
+          "email": "info@rivasdev.com"
+        },
+        "sameAs": [
+          "https://www.facebook.com/rivasdev.com",
+          "https://www.twitter.com/rivasdev.com",
+          "https://www.linkedin.com/company/rivasdev.com"
+        ]
+      }
+    </script>
+    
+    <!-- Preconexión para mejorar el rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Preload para recursos críticos -->
+    <link rel="preload" as="image" href="/assets/images/hero-banner.jpg" />
+    
+    <!-- Estilos críticos (opcional) -->
+    <style>
+      /* Aquí puedes incluir estilos críticos para mejorar el First Contentful Paint (FCP) */
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    
+    <!-- Script principal de la aplicación (módulo ES) -->
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Script de analytics: ubicado en la carpeta public/scripts y se carga como módulo -->
+    <script type="module" defer src="/scripts/analytics.js"></script>
   </body>
 </html>
